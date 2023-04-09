@@ -4,7 +4,8 @@
   "description": "the backend of lift me up",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "dev": "nodemon --require babel-register index.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,42 @@
   "bugs": {
     "url": "https://github.com/Ally4/lift-me-backend/issues"
   },
-  "homepage": "https://github.com/Ally4/lift-me-backend#readme"
+  "homepage": "https://github.com/Ally4/lift-me-backend#readme",
+  "dependencies": {
+    "@sendgrid/mail": "^7.7.0",
+    "aws-sdk": "^2.1353.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "celebrate": "^15.0.1",
+    "config": "^3.3.9",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.9",
+    "errorhandler": "^1.5.1",
+    "express": "^4.18.2",
+    "express-jwt": "^8.4.1",
+    "express-session": "^1.17.3",
+    "express-validator": "^6.15.0",
+    "gravatar": "^1.8.2",
+    "jsonwebtoken": "^9.0.0",
+    "method-override": "^3.0.0",
+    "mongoose": "^7.0.3",
+    "mongoose-paginate-v2": "^1.7.1",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "multer-s3": "^3.0.1",
+    "nodemailer": "^6.9.1",
+    "nodemon": "^2.0.22",
+    "passport": "^0.6.0",
+    "passport-facebook": "^3.0.0",
+    "passport-google-oauth": "^2.0.0",
+    "pg": "^8.10.0",
+    "swagger-ui-express": "^4.6.2"
+  },
+  "devDependencies": {
+    "nock": "^13.3.0",
+    "nyc": "^15.1.0"
+  }
 }
